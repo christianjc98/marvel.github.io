@@ -1,0 +1,273 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+#marvel-logo {
+    width: 5rem;
+    height: auto;
+}
+
+body {
+    background-color: #F0131E;
+}
+
+/* Searcher styles */
+
+.search-input {
+    position: relative;
+    margin-right: .25rem;
+}
+
+.autocomplete-list {
+    position: absolute;
+    border: 1px solid #d4d4d4;
+    border-bottom: none;
+    border-top: none;
+    z-index: 99;
+    /*position the autocomplete items to be the same width as the container:*/
+    top: 100%;
+    left: 0;
+    right: 0;
+    background-color: #fff;
+  }
+
+  .autocomplete-list li {
+      list-style: none;
+      padding: 10px;
+      cursor: pointer;
+      background-color: #fff;
+      border-bottom: 1px solid #d4d4d4;
+  }
+
+  .autocomplete-items div {
+    padding: 10px;
+    cursor: pointer;
+    background-color: #fff;
+    border-bottom: 1px solid #d4d4d4;
+  }
+  .autocomplete-items div:hover {
+    /*when hovering an item:*/
+    background-color: #e9e9e9;
+  }
+  .autocomplete-active {
+    /*when navigating through the items using the arrow keys:*/
+    background-color: DodgerBlue !important;
+    color: #ffffff;
+  }
+
+/* Main page styles */
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 2rem;
+}
+
+.main-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.main-title {
+    margin-top: 2.5rem;
+}
+
+.main-p {
+    margin-left: 1rem;
+    margin-right: 1rem;
+    color: #fff;
+    font-size: 1.4rem;
+}
+
+.img-fluid {
+    margin-top: 1rem;
+    max-width: 50%;
+    min-width: 23rem;
+}
+
+
+/* After search styles */
+.card {
+    margin-top: 0.5rem;
+    width: 23rem;   
+    height: auto;
+    border: 0;
+}
+
+.card-text {
+    font-family: 'Bangers', cursive;
+}
+
+#character-name {
+    font-family: 'Bangers', cursive;
+    color: #fff;
+    font-size: 3.5rem;
+}
+
+h2{
+    font-family: 'Bangers', cursive;
+    color: #fff;
+    font-size: 3.5rem;
+    margin-top: .75rem;
+    text-align: center;
+}
+
+
+
+  .comic-img {
+      width: 23rem;
+      height: auto;
+  }
+
+  .flip-card-front {
+      margin-bottom: .5rem;
+  }
+
+  .resources-links {
+      display: flex;
+      flex-direction: column;
+      font-size: 2rem;
+      text-align: center;
+      color: #fff;
+  }
+
+  .resources-links a:visited {
+      color: #fff;
+  }
+
+  .resources-links a {
+      color: #fff;
+      text-decoration: none;
+  }
+
+  /* Flip card styles */
+  .flip-card {
+      perspective: 1000px;
+      width: 23.125rem;
+      height: 35rem;
+      margin-top: 1rem;
+  }
+
+  .flip-card-inner {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      text-align: center;
+      transition: transform 0.8s;
+      transform-style: preserve-3d;
+  }
+
+  .flip-card:hover .flip-card-inner {
+      transform: rotateY(180deg);
+  }
+
+  .flip-card-front, .flip-card-back {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      backface-visibility: hidden;
+  }
+
+  .flip-card-back {
+      transform: rotateY(180deg);
+      background-color: #fff;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .comic-title {
+      margin: 7rem 1rem .5rem;
+      font-family: 'Bangers', cursive;
+      font-size: 2.5rem;
+  }
+
+  .comic-description {
+      margin: 0.5rem 1rem;
+      font-family: 'Bangers', cursive;
+      font-size: 1.2rem;
+  }
+
+  .comic-date {
+    font-family: 'Bangers', cursive;
+    margin: 0.5rem 1rem;
+    font-size: 1.25rem;
+  }
+
+  /* footer styles */ 
+  
+  footer {
+    margin-top: 1rem;
+    
+  }
+  
+  .footer-up {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      background-color:#004aad;
+  }
+  
+  .social-icons {
+      margin-top: .5rem;
+      font-size: 1.5rem;
+      margin-bottom: .5rem;
+  }
+  
+  .social-icons a {
+      margin: 0 .5rem;
+      text-decoration: none;
+      color: #eee9e6;
+      margin-bottom: ;
+  }
+  
+  .social-icons a:visited {
+      text-decoration: none;
+  
+  }
+  
+  .copyright {
+      margin-bottom: .5rem;
+      color: #eee9e6;
+      text-align: center;
+      font-size: 1rem;
+  }
+
+  @media (min-width: 70.625rem) {
+
+    .card {
+        flex-direction: row;
+        width: 60rem
+    }
+
+    .card img {
+        width: 65%
+    }
+
+    .card-body {
+        display: flex;
+        align-items: center;
+    }
+
+    .card-text {
+        font-size: 1.25rem;
+        
+    }
+      .comic-wrapper {
+          display: flex;
+          flex-direction: row;
+          
+      }
+
+      .flip-card {
+          margin: 1rem 0.5rem;
+      }
+
+      .resources-links {
+          flex-direction: row;
+          justify-content: space-between;
+      }
+  }

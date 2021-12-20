@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marvel characters</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link href="styles.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bangers&family=Roboto:ital,wght@0,300;0,500;0,700;1,400&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/cb14bf1aea.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <header>
+    <nav class="navbar navbar-light bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <img id=marvel-logo src="Marvel_Logo.svg.png" alt="" width="30" height="24" class="d-inline-block align-text-top">
+          </a>
+          <form class="d-flex">
+            <div class="search-input">
+                <input id="search" class="form-control me-2" type="search" placeholder="Search" aria-label="Search" autocomplete="off">
+                <div class="autocomplete-list">
+                </div>
+            </div>
+            <button id="btn-search" class="btn btn-outline-success" type="submit">Search</button>
+          </form>
+        </div>
+      </nav>
+  </header>
+  <main>
+    <div class="main-page">
+      <img src="marvel Jumbotron.jpg" class="img-fluid" alt="...">
+      <h2 class="main-title">Marvel Character Searcher</h2>
+      <p class="main-p">Look for any Marvel Comic Universe Character to get some information about him or her</p>
+    </div> 
+    <h2 id="character-name"></h2>
+    <div class="card">
+    </div>
+    <div class="comics">
+        <h2 class="comic-section-title"></h2>
+         <div class="comic-wrapper">
+
+         </div>
+    </div>
+    <div class="more-info">
+      
+    </div>
+
+  </main>
+  <footer>
+    <div class="footer-up">
+      <div class="social-icons">
+        <a href="https://www.facebook.com/Panificadora-Montejo-516559108377360" target="_blank">
+          <i class="fab fa-facebook"></i>
+        </a>
+        <a href="https://www.instagram.com/pan_montejo/?hl=es" target="_blank">
+          <i class="fab fa-instagram"></i>
+        </a>
+      </div>
+      <div class="copyright">
+        Copyright &copy <span class="date">2021</span> Panaderia Montejo
+      </div>
+    </div>
+  </footer>
+  <script src="app.js"></script>
+</body>
+</html>
