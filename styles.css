@@ -160,7 +160,7 @@ h2{
       transform-style: preserve-3d;
   }
 
-  .flip-card:hover .flip-card-inner {
+  .flip-card:hover .flip-card-inner, .flip-card:active .flip-card-inner {
       transform: rotateY(180deg);
   }
 
@@ -221,7 +221,6 @@ h2{
       margin: 0 .5rem;
       text-decoration: none;
       color: #eee9e6;
-      margin-bottom: ;
   }
   
   .social-icons a:visited {

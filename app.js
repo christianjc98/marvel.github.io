@@ -147,7 +147,6 @@ function capitalizeFirstLetter(string) {
 }
 
 
-fetchCharacterByName();
 
 
 
